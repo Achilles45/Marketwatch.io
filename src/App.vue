@@ -1,29 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <router-view />
+        <Footer />
     </div>
-    <router-view />
-  </div>
 </template>
-
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import axios from "axios";
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue"
+export default {
+  name: 'App',
+  components: {
+    Navbar,
+    Footer
   }
 }
+</script>
+
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import "./styles/_base.scss";
+@import "./styles/_colors.scss";
+@import "./styles/_hero-section.scss";
+@import "./styles/_support.scss";
+@import "./styles/_why.scss";
+@import "./styles/_products.scss";
+@import "./styles/_newsletter.scss";
+@import "./styles/_footer.scss";
+@import "./styles/_navbar.scss";
+@import "./styles/_signin.scss";
+@import "./styles/_reset_password.scss";
+@import "./styles/_register.scss";
+@import "./styles/_contact.scss";
+@import "./styles/_stock.scss";
 </style>

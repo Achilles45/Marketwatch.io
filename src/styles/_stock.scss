@@ -1,0 +1,51 @@
+.stock-wrapper{
+    .dashboard{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        .dashboard-left{
+            background: #2494BD;
+            display: grid;
+            grid-template-columns:  1fr;
+            color:#fff;
+            padding:5rem 0;
+            .left-contents{
+                margin: auto;
+            }
+            .logo{
+                padding-top:2.5rem;
+                padding-bottom: 3rem;
+                margin: auto;
+            }
+        }
+        .dashboard-right{
+            background: #fff;
+            .dashboard-right--header{
+                background: $primary-color;
+                color:#fff;
+                padding:1rem 2rem;
+            }
+        }
+    }
+}
+hr{
+    background:#333;
+}
+.dashboard-btn{
+    background: transparent;
+    border:none;
+    color:#fff;
+    padding:1rem 2rem;
+    font-size: .9rem;
+    display: inline-block !important;
+    width: 100% !important;
+    &:hover{
+        background: $primary-color;
+        color:#fff;
+    }
+}
+.dashboard-links{
+    margin: auto;
+}
+.icons{
+    font-size: .7rem;
+}

@@ -1,0 +1,32 @@
+.contact-wrapper{
+    .contact__contents{
+       margin-top:5rem;
+       .contact-details{
+        margin-top:3rem;
+        p{
+            color:#333;
+            font-size: .88rem;
+            margin-top: .7rem;
+        }
+       }
+       .contact-form{
+           margin-top:3rem;
+           input[type=text]{
+               width:100%;
+           }
+           textarea{
+               height:9rem;
+           }
+        .contact-btn{
+            color:#fff;
+            background: $primary-color;
+            padding:.7rem 2rem;
+            text-align:center;
+            width:100%;
+            border: none;
+            margin-top:1.5rem !important;
+            border-radius: 3px;
+        }
+       }
+    }
+}
